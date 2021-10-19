@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_8x">84dp</dimen>
+    <dimen name="spacing_4x">32dp</dimen>
+    <dimen name="spacing_3x">24dp</dimen>
+    <dimen name="spacing_2x">16dp</dimen>
+    <dimen name="spacing_1x">8dp</dimen>
+    <dimen name="common_error_image_size_150">150dp</dimen>
+    <dimen name="employee_spacing_12x">120dp</dimen>
+    <dimen name="title">16sp</dimen>
+    <dimen name="body">14sp</dimen>
+    <dimen name="image_size">120dp</dimen>
+</resources>

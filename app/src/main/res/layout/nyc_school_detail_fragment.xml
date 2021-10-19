@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/nyc_school_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nyc_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxEms="20"
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/spacing_2x"
+            android:text="@string/full_name"
+            android:layout_marginEnd="@dimen/spacing_1x"
+            tools:text="Sanjana Gujjar" />
+
+        <TextView
+            android:id="@+id/nyc_sat_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nyc_detail_name"
+            android:layout_marginStart="@dimen/spacing_2x"
+            android:layout_marginTop="@dimen/spacing_2x"
+            android:layout_marginEnd="@dimen/spacing_1x"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:text="@string/full_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body"
+            android:textStyle="italic"
+            tools:text="Sanjana Gujjar" />
+
+        <TextView
+            android:id="@+id/nyc_sat_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:textSize="@dimen/body"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/spacing_2x"
+            android:text="@string/full_name"
+            android:layout_marginEnd="@dimen/spacing_1x"
+            android:layout_below="@+id/nyc_sat_total"
+            tools:text="Sanjana Gujjar" />
+
+        <TextView
+            android:id="@+id/nyc_sat_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:textSize="@dimen/body"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/spacing_2x"
+            android:text="@string/full_name"
+            android:layout_marginEnd="@dimen/spacing_1x"
+            android:layout_below="@+id/nyc_sat_math"
+            tools:text="Sanjana Gujjar" />
+
+        <TextView
+            android:id="@+id/nyc_sat_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_1x"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:textSize="@dimen/body"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/spacing_2x"
+            android:text="@string/full_name"
+            android:layout_marginEnd="@dimen/spacing_1x"
+            android:layout_below="@+id/nyc_sat_reading"
+            tools:text="Sanjana Gujjar" />
+
+        <TextView
+            android:id="@+id/nyc_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nyc_sat_write"
+            android:layout_marginStart="@dimen/spacing_2x"
+            android:layout_marginTop="@dimen/spacing_2x"
+            android:layout_marginEnd="@dimen/spacing_1x"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:text="@string/full_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/body"
+            android:textStyle="italic"
+            tools:text="Sanjana Gujjar" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/error_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/nyc_school_error_view"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
